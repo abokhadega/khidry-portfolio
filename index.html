@@ -57,6 +57,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary: #0f172a;
@@ -95,8 +96,8 @@
         .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
 
         /* Photo placeholder */
-        .hero-photo { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 16px; }
-        .photo-frame { width: 200px; height: 200px; border-radius: 50%; border: 4px solid var(--accent); background: var(--primary-light); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .hero-photo { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 20px; }
+        .photo-frame { width: 200px; height: 200px; border-radius: 50%; border: 4px solid var(--accent); background: var(--primary-light); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
         .photo-frame img { width: 100%; height: 100%; object-fit: cover; }
         .photo-placeholder { display: flex; flex-direction: column; align-items: center; gap: 8px; color: #475569; text-align: center; padding: 20px; }
         .photo-placeholder svg { width: 60px; height: 60px; fill: #334155; }
@@ -177,22 +178,20 @@
         .cta-section p { font-size: 17px; color: var(--text-muted); max-width: 600px; margin: 0 auto 16px; font-weight: 500; line-height: 1.7; }
         .cta-guarantee { display: inline-block; background: #f0fdf4; border: 1px solid #bbf7d0; color: #15803d; padding: 10px 22px; border-radius: 8px; font-size: 14px; font-weight: 700; margin-bottom: 24px; }
         .contact-btns { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
-        .btn-whatsapp, .btn-telegram, .btn-email-icon { display: inline-flex; align-items: center; justify-content: center; width: 66px; height: 66px; border-radius: 50%; text-decoration: none; transition: all .3s; }
-        .btn-whatsapp { background-color: #25d366; }
+        .btn-whatsapp, .btn-telegram, .btn-email-icon { display: inline-flex; align-items: center; justify-content: center; width: 66px; height: 66px; border-radius: 50%; text-decoration: none; transition: all .3s; font-size: 28px; }
+        .btn-whatsapp { background-color: #25d366; color: #fff; }
         .btn-whatsapp:hover { background-color: #20ba5a; transform: translateY(-4px); box-shadow: 0 8px 20px rgba(37,211,102,.3); }
-        .btn-telegram { background-color: #0088cc; }
+        .btn-telegram { background-color: #0088cc; color: #fff; }
         .btn-telegram:hover { background-color: #006699; transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,136,204,.3); }
-        .btn-email-icon { background-color: #EA4335; }
+        .btn-email-icon { background-color: #EA4335; color: #fff; }
         .btn-email-icon:hover { background-color: #c0392b; transform: translateY(-4px); box-shadow: 0 8px 20px rgba(234,67,53,.3); }
-        .btn-whatsapp svg, .btn-telegram svg, .btn-email-icon svg { width: 34px; height: 34px; fill: #fff; }
 
         /* Footer */
         footer { background-color: var(--primary); color: #64748b; padding: 30px 0; text-align: center; font-size: 14px; font-weight: 600; border-top: 1px solid rgba(255,255,255,.05); }
 
         /* Floating WA */
-        .floating-wa { position: fixed; bottom: 30px; left: 30px; background-color: #25d366; color: white; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,.15); transition: all .3s; z-index: 999; }
+        .floating-wa { position: fixed; bottom: 30px; left: 30px; background-color: #25d366; color: white; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,.15); transition: all .3s; z-index: 999; font-size: 28px; }
         .floating-wa:hover { transform: scale(1.1); }
-        .floating-wa svg { width: 30px; height: 30px; fill: white; }
 
         /* Responsive */
         @media (max-width: 992px) {
@@ -437,7 +436,7 @@
             </div>
             <div class="step-card">
                 <div class="step-num">4</div>
-                <h3>المتا��عة المستمرة</h3>
+                <h3>المتابعة المستمرة</h3>
                 <p>نفضل معاك بعد التسليم — تقارير دورية ومتابعة تشغيلية 24/7.</p>
             </div>
         </div>
@@ -482,13 +481,13 @@
         <div class="cta-guarantee">✅ الاستشارة الأولى مجانية تماماً — بدون أي التزام</div>
         <div class="contact-btns">
             <a href="https://wa.me/201069406249" target="_blank" class="btn-whatsapp" title="واتساب">
-                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2a13 13 0 0 0-11.27 19.51L3 29l7.73-2A13 13 0 1 0 16 2zm6.94 18.54c-.3.84-1.5 1.52-2.07 1.57-.52.05-1.19.08-3.44-.83A12.06 12.06 0 0 1 12 18.12a8.55 8.55 0 0 1 2.27-5.43 3.2 3.2 0 0 1 2.22-.67 1.6 1.6 0 0 1 1.42 1.6 9.55 9.55 0 0 1 .6 3.06c0 1.5-.9 2.28-1.85 2.28h-.38a1.6 1.6 0 0 0-1.5 2.3 4.5 4.5 0 0 0 2.22 2.45c1.47.75 3.56.93 5.45.38 1.1-.32 2-1.1 2.2-2.02.22-1.32 0-2.94-.27-3.52z"/></svg>
+                <i class="fab fa-whatsapp"></i>
             </a>
             <a href="https://t.me/+201069406249" target="_blank" class="btn-telegram" title="تلجرام">
-                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C8.27 2 2 8.27 2 16s6.27 14 14 14 14-6.27 14-14S23.73 2 16 2zm7.84 11.56-2.3 10.84c-.17.77-.63.96-1.28.6l-3.54-2.62-1.7 1.64c-.19.19-.35.35-.72.35l.25-3.54 6.46-5.83c.28-.25-.06-.4-.43-.15l-7.98 5.03-3.44-1.08c-.74-.23-.76-.74.16-1.1l13.51-5.21c.63-.23 1.18.14 1.01 1.1z"/></svg>
+                <i class="fab fa-telegram"></i>
             </a>
             <a href="mailto:khidry@gmail.com?subject=استشارة%20مجانية%20-%20خضري%20عامر" class="btn-email-icon" title="البريد الإلكتروني">
-                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M27 6H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h22a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3zm-1.38 2L16 14.6 6.38 8zM27 24H5a1 1 0 0 1-1-1V10l11 7.2 11-7.2v13a1 1 0 0 1-1 1z"/></svg>
+                <i class="fas fa-envelope"></i>
             </a>
         </div>
     </div>
@@ -556,7 +555,7 @@
 </div>
 
 <a href="https://wa.me/201069406249" class="floating-wa" target="_blank" title="تواصل عبر واتساب">
-    <svg viewBox="0 0 32 32"><path d="M16 2a13 13 0 0 0-11.27 19.51L3 29l7.73-2A13 13 0 1 0 16 2zm6.94 18.54c-.3.84-1.5 1.52-2.07 1.57-.52.05-1.19.08-3.44-.83A12.06 12.06 0 0 1 12 18.12a8.55 8.55 0 0 1 2.27-5.43 3.2 3.2 0 0 1 2.22-.67 1.6 1.6 0 0 1 1.42 1.6 9.55 9.55 0 0 1 .6 3.06c0 1.5-.9 2.28-1.85 2.28h-.38a1.6 1.6 0 0 0-1.5 2.3 4.5 4.5 0 0 0 2.22 2.45c1.47.75 3.56.93 5.45.38 1.1-.32 2-1.1 2.2-2.02.22-1.32 0-2.94-.27-3.52z"/></svg>
+    <i class="fab fa-whatsapp"></i>
 </a>
 </body>
 </html>
