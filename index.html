@@ -170,7 +170,7 @@
     <div class="container nav-container">
         <div class="logo-container">
             <div class="logo">Khidry Amer<span>.</span></div>
-            <div class="logo-ar">خضري عامر</div>
+            <div class="logo-ar" style="color:#5eead4;">خضري عامر</div>
         </div>
         <a href="https://wa.me/201069406249?text=أريد%20استشارة%20مجانية" class="nav-btn">استشارة مجانية</a>
     </div>
@@ -444,8 +444,63 @@
 <footer>
     <div class="container">
         <p>© 2026 Khidry Amer | محاسب وخبير متاجر إلكترونية — السوق السعودي. جميع الحقوق محفوظة.</p>
+        <div style="margin-top:12px; display:flex; justify-content:center; gap:24px;">
+            <a href="#" onclick="document.getElementById('modal-terms').style.display='flex'; return false;" style="color:#475569; font-size:14px; font-weight:600; text-decoration:none;">الشروط والأحكام</a>
+            <a href="#" onclick="document.getElementById('modal-privacy').style.display='flex'; return false;" style="color:#475569; font-size:14px; font-weight:600; text-decoration:none;">سياسة الخصوصية</a>
+        </div>
     </div>
 </footer>
+
+<!-- Terms Modal -->
+<div id="modal-terms" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:9999; align-items:center; justify-content:center; padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:#fff; border-radius:16px; max-width:600px; width:100%; max-height:85vh; overflow-y:auto; padding:36px; position:relative;" dir="rtl">
+        <button onclick="document.getElementById('modal-terms').style.display='none'" style="position:absolute; top:16px; left:16px; background:none; border:none; font-size:24px; cursor:pointer; color:#64748b;">✕</button>
+        <h2 style="font-family:'Tajawal',sans-serif; font-size:22px; font-weight:800; color:#0f172a; margin-bottom:20px;">الشروط والأحكام</h2>
+        <p style="font-family:'Tajawal',sans-serif; font-size:13px; color:#94a3b8; margin-bottom:20px;">آخر تحديث: يونيو 2026</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">1. قبول الشروط</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">باستخدامك لخدمات خضري عامر أو تواصلك معه، فإنك توافق على الشروط والأحكام المذكورة في هذه الصفحة.</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">2. طبيعة الخدمات</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">تشمل الخدمات المقدمة: إدارة المتاجر الإلكترونية، التأسيس من الصفر، الخدمات المحاسبية، وتنظيم البيزنس. يتم الاتفاق على تفاصيل كل خدمة وآلية التنفيذ بشكل فردي مع كل عميل قبل البدء.</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">3. الاستشارة المجانية</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">الاستشارة الأولى مجانية تماماً ومدتها 30 دقيقة، ولا تُلزم أياً من الطرفين بالاستمرار. أي عمل بعدها يستلزم اتفاقاً مكتوباً على الأسعار والمدة.</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">4. السرية والأمانة</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">تُعامَل جميع المعلومات المالية والتشغيلية للعميل بسرية تامة، ولا يتم مشاركتها مع أي طرف ثالث تحت أي ظرف.</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">5. المسؤولية</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">يلتزم خضري عامر ببذل أقصى جهد ممكن لتحقيق أهداف العميل، غير أن النتائج قد تتفاوت بحسب طبيعة كل بيزنس والعوامل الخارجية. لا يتحمل مسؤولية قرارات العميل التي تتخذ بمعزل عن الاتفاق المشترك.</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">6. التواصل والدعم</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">يتم التواصل عبر واتساب أو تيليجرام أو البريد الإلكتروني. يُلتزم بالرد خلال 24 ساعة في أيام العمل.</p>
+    </div>
+</div>
+
+<!-- Privacy Modal -->
+<div id="modal-privacy" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:9999; align-items:center; justify-content:center; padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:#fff; border-radius:16px; max-width:600px; width:100%; max-height:85vh; overflow-y:auto; padding:36px; position:relative;" dir="rtl">
+        <button onclick="document.getElementById('modal-privacy').style.display='none'" style="position:absolute; top:16px; left:16px; background:none; border:none; font-size:24px; cursor:pointer; color:#64748b;">✕</button>
+        <h2 style="font-family:'Tajawal',sans-serif; font-size:22px; font-weight:800; color:#0f172a; margin-bottom:20px;">سياسة الخصوصية</h2>
+        <p style="font-family:'Tajawal',sans-serif; font-size:13px; color:#94a3b8; margin-bottom:20px;">آخر تحديث: يونيو 2026</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">1. البيانات التي نجمعها</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">عند تواصلك معنا، قد نحصل على اسمك، بيانات التواصل، ومعلومات عامة عن بيزنسك بهدف تقديم الخدمة فقط. الموقع لا يستخدم أي أدوات تتبع أو ملفات تعريف (Cookies) لأغراض تجارية.</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">2. كيف نستخدم بياناتك</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">تُستخدم بياناتك حصراً لتقديم الخدمة المتفق عليها، والتواصل معك بشأن طلبك، وإرسال أي تقارير أو مستندات ذات صلة بعملك.</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">3. حماية البيانات</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">لا تُشارك بياناتك مع أي طرف ثالث، ولا تُباع أو تُستخدم لأغراض تسويقية. يلتزم خضري عامر بالحفاظ على سرية جميع المعلومات المالية والتشغيلية للعملاء.</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">4. حقوقك</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">يحق لك في أي وقت طلب حذف بياناتك أو الاطلاع عليها عبر التواصل المباشر على البريد الإلكتروني أو واتساب.</p>
+
+        <h3 style="font-family:'Tajawal',sans-serif; font-size:16px; font-weight:700; color:#0f172a; margin:20px 0 8px;">5. التواصل بشأن الخصوصية</h3>
+        <p style="font-family:'Tajawal',sans-serif; font-size:15px; color:#475569; line-height:1.8; margin-bottom:12px;">لأي استفسار متعلق بخصوصية بياناتك، تواصل معنا على: <a href="mailto:khidry@gmail.com" style="color:#0d9488; font-weight:700;">khidry@gmail.com</a></p>
+    </div>
+</div>
 
 <a href="https://wa.me/201069406249" class="floating-wa" target="_blank" title="تواصل عبر واتساب">
     <svg viewBox="0 0 32 32"><path d="M16 2a13 13 0 0 0-11.27 19.51L3 29l7.73-2A13 13 0 1 0 16 2zm6.94 18.54c-.3.84-1.5 1.52-2.07 1.57-.52.05-1.19.08-3.44-.83A12.06 12.06 0 0 1 12 18.12a8.55 8.55 0 0 1-2.42-6A6.29 6.29 0 0 1 11.44 8a1 1 0 0 1 .74-.32h.62a.46.46 0 0 1 .43.29l1.13 2.74a.45.45 0 0 1 0 .43.89.89 0 0 1-.25.35l-.46.54c-.14.15-.29.3-.12.6A9 9 0 0 0 15.35 15a8 8 0 0 0 2.65 1.64c.3.14.47.12.64-.08l.71-.83a.58.58 0 0 1 .6-.13l2.71 1.28a.49.49 0 0 1 .3.42v1.24a1.23 1.23 0 0 1-.02.26z"/></svg>
