@@ -190,9 +190,8 @@
 
         /* How we work */
         .how-section { background: var(--bg-light); }
-        .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
-        .steps-grid::before { content: ''; position: absolute; top: 36px; right: 12.5%; left: 12.5%; height: 2px; background: linear-gradient(to left, var(--accent), #5eead4); z-index: 0; }
-        .step-card { text-align: center; padding: 0 16px; position: relative; z-index: 1; }
+        .steps-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .step-card { text-align: center; padding: 28px 20px; background: var(--bg-white); border-radius: 12px; box-shadow: var(--card-shadow); border: 1px solid #e2e8f0; }
         .step-num { width: 72px; height: 72px; border-radius: 50%; background: var(--primary); border: 3px solid var(--accent); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 28px; font-weight: 800; color: var(--accent); }
         .step-card h3 { font-size: 17px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
         .step-card p { font-size: 14px; color: var(--text-muted); font-weight: 500; line-height: 1.6; }
@@ -250,14 +249,15 @@
             .hero-btns { justify-content: center; }
             .services-grid, .future-services-grid { grid-template-columns: 1fr; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
-            .steps-grid::before { display: none; }
+            .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
             .hero h1 { font-size: 30px; }
             .trust-bar-inner { gap: 20px; }
         }
         @media (max-width: 576px) {
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .steps-grid { grid-template-columns: 1fr; }
+            .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .step-card { padding: 18px 12px; }
+            .step-num { width: 56px; height: 56px; font-size: 22px; }
             .hero h1 { font-size: 26px; }
         }
     </style>
